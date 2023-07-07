@@ -1,9 +1,9 @@
+//RouterResolver.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {Routes, Route } from 'react-router-dom';
 import routes from '../config/routes';
 import {Layout, theme} from "antd";
-const {Content, Sider } = Layout;
-
+const {Content } = Layout;
 const RouteResolver = () => {
     const {
         token: {colorBgContainer},
@@ -13,8 +13,8 @@ const RouteResolver = () => {
         <Content style={{margin: '24px 16px 0'}}>
             <div style={{padding: 24, minHeight: 360, background: colorBgContainer}}>
                 <Routes>
-                    {routes.map((route, index) => (
-                        <Route key={index} path={route.path} element={<route.component/>}/>
+                    {routes.map((route) => (
+                        <Route key={route.path} path={route.path} element={<route.component/>}/>
                     ))}
                 </Routes>
             </div>

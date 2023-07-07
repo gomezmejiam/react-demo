@@ -1,6 +1,6 @@
-// Componente de Menú
+//NavigationMenu.jsx
 import {Layout, Menu} from 'antd';
-import routes from '../config/routes';
+import routes from '@config/routes';
 import React from "react";
 import {Link} from "react-router-dom";
 const {  Sider } = Layout;
@@ -19,7 +19,7 @@ const NavigationMenu = () =>
             <div className="demo-logo-vertical" />
             <Menu theme="dark" mode="inline" defaultSelectedKeys={['1']}>
                 {routes.map((item, index) => (
-                    <Menu.Item key={index + 1} icon={<item.icon/>}>
+                    <Menu.Item key={item.path} icon={<item.icon/>}>
                         <Link to={item.path}>{item.title}</Link>
                     </Menu.Item>
                 ))}

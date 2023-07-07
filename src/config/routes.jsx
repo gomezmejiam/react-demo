@@ -1,6 +1,6 @@
-// routes.js
-import CrearTarea from '../components/CrearTarea';
-import ListarTarea from '../components/ListarTarea';
+// routes.jsx
+import CrearTarea from '@components/tasks/CrearTarea';
+import ListarTarea from '@components/tasks/ListarTarea';
 import {PlusCircleOutlined, UserOutlined, UnorderedListOutlined} from "@ant-design/icons";
 const routes = [
     {
