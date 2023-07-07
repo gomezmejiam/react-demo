@@ -59,7 +59,7 @@ const CrearTarea = () => {
 
                 <Form.Item
                     label="Due Date"
-                    name="fechaFinal"
+                    name="fechaLimite"
                     rules={[{ required: true, message: 'Please select the due date!' }]}
                 >
                     <DatePicker />

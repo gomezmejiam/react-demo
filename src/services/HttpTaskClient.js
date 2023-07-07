@@ -2,7 +2,7 @@ import HttpClient from './HttpClient';
 
 class HttpTaskClient extends HttpClient {
     constructor() {
-        super('http://localhost:3001');
+        super('https://dull-ruby-rhinoceros-gear.cyclic.app');
     }
 
     createTask(taskData) {
