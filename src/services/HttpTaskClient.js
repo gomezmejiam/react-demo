@@ -2,7 +2,7 @@ import HttpClient from './HttpClient';
 
 class HttpTaskClient extends HttpClient {
     constructor() {
-        super('https://dull-ruby-rhinoceros-gear.cyclic.app');
+        super('https://ids-laboratorio.azurewebsites.net');
     }
 
     createTask(taskData) {
